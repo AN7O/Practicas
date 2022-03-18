@@ -1,12 +1,12 @@
 # Adivina adivinador....
 import random
-numero_aleatorio = random.randrange(5)
+numero_aleatorio = random.randrange(100)
 gane = False
 print('Tenes 3 intentos para adivinar un numero entre 0 y 99')
-intento = 1
-while intento < 4 and not gane:
-    numeroIngresado = int(input('Ingresa tu numero: '))
-    if numeroIngresado == numero_aleatorio:
+intento = 0
+while intento < 5 and not gane:
+    numero_ingresado = int(input('Ingresa tu numero: '))
+    if numero_ingresado == numero_aleatorio:
         print('Ganaste! y necesitaste {} intentos!!!'.format(intento))
         gane = True
     else:
